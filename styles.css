@@ -1,0 +1,164 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 0 0 50% 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.proprietor-title {
+    color: #ac9efb; /* Bright gold color */
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+.proprietor-name {
+    color: #ac9efb; /* Bright gold color */
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.2em 0 1em;
+}
+
+main {
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about, .contact {
+    background: #fff;
+    padding: 2em;
+    margin: 1em 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact-button, .info-button {
+    background: linear-gradient(135deg, #ac9efb, #333); /* Dynamic button gradient */
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0.5em 0;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-button:hover, .info-button:hover {
+    background: #7547ff;
+    transform: scale(1.05);
+}
+
+.info-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #4c963f, #3b7b32); /* Info button gradient */
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.info-button:hover {
+    background: #3b7b32;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: modalFadeIn 0.5s;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
